@@ -22,17 +22,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void onClickBtn(View view) {
-       switch (view.getId()){
-           case R.id.btnSi:
-               tvMsg.setText("Has pulsado si");
-           break;
-           case  R.id.btnNo:
-               tvMsg.setText("Has pulsado no");
-           break;
-           case R.id.btnAveces:
-               tvMsg.setText("Has pulsado a veces");
-           break;
-       }
+
+        if (view.getId() == R.id.btnSi) {
+            tvMsg.setText("Has pulsado si");
+        } else if (view.getId() == R.id.btnNo) {
+            tvMsg.setText("Has pulsado no");
+        } else if (view.getId() == R.id.btnAveces) {
+            tvMsg.setText("Has pulsado a veces");
+        }
 
     }
 

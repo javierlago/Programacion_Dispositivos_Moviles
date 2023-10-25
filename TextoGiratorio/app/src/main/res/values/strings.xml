@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TextoGiratorio</string>
+    <string name="haz_click_y_te_saludo">Haz click y te saludo</string>
+    <string name="saludo">HOLA!!</string>
+</resources>

@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-public class MainActivity extends AppCompatActivity  implements View.OnClickListener{
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     TextView tvMensaje;
     Button btnSi, btnNo, btnAveces, btnNose;
 
@@ -62,8 +62,6 @@ public class MainActivity extends AppCompatActivity  implements View.OnClickList
 
         }
     };
-
-
 
 
 }

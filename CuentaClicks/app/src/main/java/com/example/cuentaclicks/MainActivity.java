@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         clicks +=1;
-        contador.setText("Has pulsado " + String.valueOf(clicks));
+        contador.setText("Has pulsado " + clicks);
 
 
     }

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/txtCentral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:text="@string/utilizas_iexplorer" />
+
+    <RelativeLayout
+        android:id="@+id/botones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCentral"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp"
+            android:text="@string/si" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:text="@string/no" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:text="@string/a_veces" />
+    </RelativeLayout>
+<!--
+  PROPIEDADES PARA CENTRAR EN RELATIVE LAYOUT
+• android:layout_above: sitúa la vista encima del id especificado.
+• android:layout_below: sitúa la vista debajo del id especificado.
+• android:layout_toLeftOf: sitúa la vista a la izquierda.
+• android:layout_toRightOf: sitúa la vista a la derecha.
+• android:layout_alignLeft: alinea el borde izqdo. con el del id especificado.
+• android:layout_alignRight: alinea el borde dcho. con el del id especificado.
+• android:layout_alignTop: alinea el borde superior con el del id especificado
+• android:layout_alignBottom: alinea el borde inferior con el del id especificado.
+******************************************************************************************
+• android:layout_alignParentLeft: si es true, alinea con el borde izqdo. del padre.
+• android:layout_alignParentRight: si es true, alinea con el borde dcho. del padre.
+• android:layout_alignParentTop: si es true, alinea con el borde sup. del padre.
+• android:layout_alignParentBottom: si es true, alinea con el borde inf. del padre.
+• android:layout_centerHorizontal: si es true, centra en horiz. respecto al padre.
+• android:layout_centerVertical: si es true, centra en vertical respecto al padre.
+• android:layout_centerInParent: si es true, centra en ambos sentidos.
+ -->
+</RelativeLayout>

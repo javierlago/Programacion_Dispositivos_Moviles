@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ejemplo_Relative_Layout</string>
+    <string name="a_veces">a_veces</string>
+    <string name="no">no</string>
+    <string name="si">si</string>
+    <string name="utilizas_iexplorer">utilizas_iexplorer</string>
+</resources>

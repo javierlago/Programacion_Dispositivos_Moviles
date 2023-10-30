@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#67FF4D"
+            android:shadowColor="#A500FF"
+            android:shadowRadius="15"
+            android:text="Hello World!"
+            android:textSize="25sp"
+            android:textStyle="italic|bold"
+            android:typeface="monospace" />
+        <!--Campos de texto-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/black" />
+
+        <EditText
+            android:id="@+id/et_texto_alfanumerico"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Introduce nombre:"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Edad:"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_decimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Número decimal:"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Contraseña:"
+            android:inputType="numberPassword" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Multilinea con tipo:"
+            android:inputType="textCapWords|textMultiLine" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Texto sin sugerencias:"
+            android:inputType="textNoSuggestions" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Mayusculas:"
+            android:inputType="textCapCharacters" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Fecha Nacimiento: DD/MM/YYYY"
+            android:inputType="date" />
+
+        <!--Botones-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+
+        <Button
+            android:id="@+id/boton_normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Boton normal" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/doraemon" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/doraemon"
+            android:text="Ver dibujos" />
+
+        <ToggleButton
+            android:id="@+id/toggle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <!--Checks-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+
+        <CheckBox
+            android:id="@+id/chkAcept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Acepto las condiciones" />
+
+        <!--Radio buttons-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+
+        <RadioGroup
+            android:id="@+id/btn_radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/btnSi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Si" />
+
+            <RadioButton
+                android:id="@+id/btnNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No" />
+
+            <RadioButton
+                android:id="@+id/btnAVeces"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="A veces" />
+        </RadioGroup>
+
+        <!--Switches-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+
+        <Switch
+            android:id="@+id/swiWifi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activar wifi" />
+
+        <Switch
+            android:id="@+id/swiDMoviles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activar datos móviles" />
+        <!--Fechas /horas-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+
+        <DatePicker
+            android:id="@+id/dpFecha1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <DatePicker
+            android:id="@+id/dpFecha2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner" />
+
+        <TimePicker
+            android:id="@+id/tpHora1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:datePickerMode="spinner" />
+        <!--Barra progreso-->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/black" />
+
+        <ProgressBar
+            android:id="@+id/pgb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+        <SeekBar
+            android:id="@+id/skb1"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10"
+            android:min="1" />
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:rating="0.5"
+            android:stepSize="0.5" />
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">EligeGiro</string>
+    <string name="giramos">¿Giramos?</string>
+    <string name="lblText">Texto</string>
+    <string name="lblImagen">Imagen</string>
+    <string name="lblAngulo">Eligen un angulo de giro(Entre 10-90)</string>
+    <string name="btnAceptar">Aceptar</string>
+    <string name="lblGirando">Girandoooo!!!!</string>
+</resources>

@@ -9,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -16,8 +17,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView textoGiratorio,mensaje;
 
     RadioGroup grupoBotones;
-    RadioButton btnTexto,btnImagen,btnAceptar;
-
+    RadioButton btnTexto,btnImagen;
+    Button btnAceptar;
+    int giro;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,29 +52,39 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
 
+        if(view.getId()==btnAceptar.getId()){
+            if(btnImagen.isChecked()){
+                grupoBotones.setVisibility(View.GONE);
+                btnAceptar.setVisibility(View.GONE);
+                mensaje.setVisibility(View.GONE);
+                cohete.setVisibility(View.VISIBLE);
+                if (view.getId()==R.id.cohete) {
+                    giro += 45;
+                    if(giro==360){giro=0;}
+                    cohete.setRotation(giro);
+                }
+            }else if(btnTexto.isChecked()) {
+                grupoBotones.setVisibility(View.GONE);
+                btnAceptar.setVisibility(View.GONE);
+                mensaje.setVisibility(View.GONE);
+                textoGiratorio.setVisibility(View.VISIBLE);
+
+            }else{
+                Toast.makeText(MainActivity.this,"Selecciona una opcion",Toast.LENGTH_LONG).show();
+            }
 
 
 
-         grupoBotones.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-             @Override
-             public void onCheckedChanged(RadioGroup radioGroup, int i) {
-                 if(i == R.id.btnTexto ){
-                     if(view.getId()==R.id.btnAceptar){
-                     mensaje.setVisibility(View.GONE);
-                     btnImagen.setVisibility(View.GONE);
-                     btnTexto.setVisibility(View.GONE);
-                     btnAceptar.setVisibility(View.GONE);
-                     textoGiratorio.setVisibility(View.VISIBLE);}
-                 }else if(i == R.id.btnImagen && view.getId()==R.id.btnAceptar ){
-                     mensaje.setVisibility(View.GONE);
-                     btnImagen.setVisibility(View.GONE);
-                     btnTexto.setVisibility(View.GONE);
-                     btnAceptar.setVisibility(View.GONE);
-                     cohete.setVisibility(View.VISIBLE);
-                 }
-             }
-         });
 
+        }
+
+        if (view.getId()==cohete.getId()) {
+            giro = giro(giro);
+            cohete.setRotation(giro(giro));
+        }
+        if (view.getId()==textoGiratorio.getId()) {
+            giro = giro(giro);
+            textoGiratorio.setRotation(giro(giro));
         }
 
 
@@ -80,9 +92,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
 
+    }
 
-
-
-
+    public int giro(int giro){
+        giro +=45;
+        if(giro==360){giro =0;}
+    return giro;
     }
 }

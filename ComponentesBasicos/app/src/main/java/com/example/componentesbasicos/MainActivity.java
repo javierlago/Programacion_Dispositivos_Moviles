@@ -24,7 +24,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private EditText etDecimal;
     private Button botonStandar;
     private RadioGroup radioGroup1;
-
+    private Button btnSi;
+    private Button btnNo;
+    private Button btnAveces;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,6 +71,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(this, mensaje, Toast.LENGTH_LONG).show();
 
 
+        } else if (v.getId()==R.id.btnSi) {
+            Toast.makeText(this,"click en si", Toast.LENGTH_SHORT).show();
+
+
+        }else if (v.getId()==R.id.btnNo) {
+            Toast.makeText(this," click en no", Toast.LENGTH_SHORT).show();
+
+
+        }else{
+            Toast.makeText(this," click en aveces", Toast.LENGTH_SHORT).show();
+
+
         }
 
 
@@ -91,6 +105,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switchWifi = findViewById(R.id.swiWifi);
         checkBoxAcept = findViewById(R.id.chkAcept);
         radioGroup1 = findViewById(R.id.btn_radio_group);
+        btnSi= findViewById(R.id.btnSi);
+        btnNo= findViewById(R.id.btnNo);
+        btnAveces= findViewById(R.id.btnAVeces);
+
+
 
 
     }
@@ -100,6 +119,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      switchWifi.setOnClickListener(this);
      checkBoxAcept.setOnClickListener(this);
      botonStandar.setOnClickListener(this);
+     btnSi.setOnClickListener(this);
+     btnNo.setOnClickListener(this);
+     btnAveces.setOnClickListener(this);
     // escuchador para el onCheckedChanged para la checkBox//
      checkBoxAcept.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
          @Override
@@ -116,11 +138,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
          @Override
          public void onCheckedChanged(RadioGroup group, int checkedId) {
              if(checkedId== R.id.btnSi){
-                 Toast.makeText(MainActivity.this,"Has clicado Si",Toast.LENGTH_SHORT).show();
+                 Toast.makeText(MainActivity.this,"change Si",Toast.LENGTH_SHORT).show();
              }else if(checkedId==R.id.btnNo){
-                 Toast.makeText(MainActivity.this,"Has clicado No",Toast.LENGTH_SHORT).show();
+                 Toast.makeText(MainActivity.this,"change No",Toast.LENGTH_SHORT).show();
              }else{
-                 Toast.makeText(MainActivity.this,"Has clicado No",Toast.LENGTH_SHORT).show();
+                 Toast.makeText(MainActivity.this,"change veces",Toast.LENGTH_SHORT).show();
              }
 
              }

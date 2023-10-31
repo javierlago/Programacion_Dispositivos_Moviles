@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout   xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <ImageView
+        android:id="@+id/cohete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cohete"
+        android:visibility="gone"
+        />
+    <TextView
+        android:id="@+id/textoGiratorio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/giratorio"
+        android:background="@color/black"
+        android:textColor="@color/white"
+        android:visibility="gone"/>
+
+
+
+    <TextView
+        android:id="@+id/mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/giramod" />
+    <RadioGroup
+        android:id="@+id/btnRadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/btnTexto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto"/>
+        <RadioButton
+            android:id="@+id/btnImagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/imagen"/>
+    </RadioGroup>
+    <Button
+        android:id="@+id/btnAceptar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/aceptar"/>
+
+
+
+</LinearLayout>

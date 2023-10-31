@@ -23,8 +23,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        if (giro == 360) giro=0 ;
+
         giro += 45;
+        if (giro == 360) {
+            giro=0 ;
+        }
         mensaje.setText(getResources().getString(R.string.saludo));
         mensaje.setBackgroundColor(getResources().getColor(R.color.amarillo));
         //mensaje.setBackgroundColor(ContextCompat.getColor(this, R.color.amarillo));

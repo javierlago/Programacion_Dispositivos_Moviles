@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GirarImagenTexto</string>
+    <string name="giramod">Giramos?</string>
+    <string name="texto">Texto</string>
+    <string name="imagen">Imagen</string>
+    <string name="aceptar">Aceptar</string>
+    <string name="giratorio">Girandooooooo!!!!!</string>
+</resources>

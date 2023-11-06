@@ -1,16 +1,26 @@
 package com.example.textogiratorio;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
 
 import android.annotation.SuppressLint;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
+import java.time.LocalDate;
+import java.util.Date;
+
+
+@RequiresApi(api = Build.VERSION_CODES.O)
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     TextView mensaje;
     int giro = 0;
+    int year = LocalDate.now().getYear();
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

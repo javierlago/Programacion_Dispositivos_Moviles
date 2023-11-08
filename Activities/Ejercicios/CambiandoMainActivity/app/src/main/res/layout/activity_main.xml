@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manejo de activities" />
+    <!-- Llamada normal -->
+    <Button
+        android:id="@+id/btnLlamadaActividad2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickCambioActivity"
+        android:text="@string/llamadaActivity2" />
+
+    <!-- Llamada normal con datos -->
+    <Button
+        android:id="@+id/btnLlamadaActividad3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickCambioActivity"
+        android:text="@string/llamadaActivity3" />
+
+    <!-- Llamada normal con datos empaquetados(Bundle)-->
+
+    <Button
+        android:id="@+id/btnLlamadaActividad4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickCambioActivity"
+        android:text="@string/llamadaActivity4" />
+    <!-- Llamada con espera de respuesta-->
+
+    <Button
+        android:id="@+id/btnLlamadaConEsperaRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickCambioActivity"
+        android:text="@string/llamadaConEsperaRespuesta" />
+    <TextView
+        android:id="@+id/txtViewRespuesta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

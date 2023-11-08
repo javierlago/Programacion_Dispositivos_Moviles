@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CambiandoMainActivity</string>
+    <string name="llamadaActivity2">Llamada Activity 2</string>
+    <string name="estoyenlaactiviti2">Estoy en la activity 2</string>
+    <string name="estoyenlaactiviti3">Estoy en la activity 3</string>
+    <string name="llamadaActivity3">Llamar a la Activiy 3</string>
+    <string name="llamadaActivity4">Llamada a la Activity 4</string>
+    <string name="estoyenlaactiviti4">Estoy en la activity 4</string>
+    <string name="llamadaConEsperaRespuesta">Espera Respuesta</string>
+    <string name="estoyenlaactiviti5">Estoy en la activity 5</string>
+    <string name="volver">Volver a la actividad 1</string>
+</resources>

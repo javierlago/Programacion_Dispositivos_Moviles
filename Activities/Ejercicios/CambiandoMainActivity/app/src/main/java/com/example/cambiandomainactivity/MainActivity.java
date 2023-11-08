@@ -4,19 +4,26 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
-    String datoAenviar;
+    private String datoAenviar;
+
+    // Código usado para referenciar la activity
     private static final int codigoLlamadaA5 =0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Log.i("cicloDevida","Ejecuto on Crate");
     }
 
     public void onClickCambioActivity(View view) {
@@ -25,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this,Activity2.class);
           //realeizar la llamada
             startActivity(intent);
+
+
         } else if (view.getId()== R.id.btnLlamadaActividad3) {
           // crear otro objeto
           Intent intent = new Intent(this, Activity3.class);
@@ -45,14 +54,29 @@ public class MainActivity extends AppCompatActivity {
             Intent intent = new Intent(this,Activity5.class);
             // llamada esperando  restpuesta
             startActivityForResult(intent,codigoLlamadaA5);
+            TextView txtVrespuesta = findViewById(R.id.txtViewRespuesta);
+            txtVrespuesta.setText("");
+        } else if (view.getId()== R.id.btn_llamada_a_otra_app) {
+            Intent intent = new Intent();
+            // Llamamos al paquete de la app que queremos llamar y a su clae
+            intent.setClassName("com.example.cuentaclicks","com.example.cuentaclicks.MainActivity");
+            PackageManager pm = getPackageManager();
+            List actividadesPosibles = pm.queryIntentActivities(intent, PackageManager.MATCH_DEFAULT_ONLY);
+            if (actividadesPosibles.size()>0){
+                startActivity(intent);
+            }
+            else{
+                Toast.makeText(MainActivity.this, "Ninguna actividad puede realizar esta acción", Toast.LENGTH_SHORT).show();
+            }
 
         }
     }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        Log.e("cicloDevida","Ejecuto onActivityResult");
         super.onActivityResult(requestCode, resultCode, data);
-        // Vemos quien nos esta contestando
+        // Vemos quien nos esta contestando con el código que le indicamos en el inicio
         if (requestCode== codigoLlamadaA5){
             // Testeamos el código de resultado
             if(resultCode==RESULT_OK){
@@ -68,4 +92,41 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
+
+    protected void onStart() {
+        super.onStart();
+        Log.i("cicloDevida","Ejecuto on Start Activity 1");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.i("cicloDevida","Ejecuto on Stop Activity 1");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.i("cicloDevida","Ejecuto on Restart Activity 1");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.i("cicloDevida","Ejecuto on Pause Activity 1");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.i("cicloDevida","Ejecuto on Destroy Activity 1");
+
+    }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        Log.i("cicloDevida","Ejecuto on Resume Activity 1");
+    }
+
 }

@@ -22,14 +22,17 @@ public class Activity5 extends AppCompatActivity {
                 String datoRespuesta = "Esto es la respuesta de la actividad 5";
                 // Creamos en Intent para devolver los datos
                 Intent intent = new Intent();
+                // Metemos el dato a enviar dentro del Intent
                 intent.putExtra("mensaje", datoRespuesta);
+                // Seteamos el resultado
                 setResult(RESULT_OK,intent);
+                // Destruimos la activity
                 finish();
 
             }
         });
     }
-    // escuchador de retorno
+
 
 
 }

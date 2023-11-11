@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ejercicio12</string>
+    <string name="conectar">Conectar</string>
+    <string name="hint_usuario">Usuario</string>
+    <string name="hint_contrasena">Contraseña</string>
+    <string name="iniciar_sesion">Iniciar Sesion</string>
+    <string name="has_olvidado">¿Olvidaste tu contraseña?</string>
+</resources>

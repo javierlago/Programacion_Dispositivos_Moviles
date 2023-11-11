@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ejercicio7Saludo</string>
+    <string name="nombre">Nombre</string>
+    <string name="edad">Edad</string>
+    <string name="senora">Sra.</string>
+    <string name="senor">Señor</string>
+    <string name="deseas_despedida">Deseas despedida</string>
+</resources>

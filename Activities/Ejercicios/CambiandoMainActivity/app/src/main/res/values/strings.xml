@@ -10,4 +10,6 @@
     <string name="estoyenlaactiviti5">Estoy en la activity 5</string>
     <string name="volver">Volver a la actividad 1</string>
     <string name="llamada_otra_app">Llamada a otra app</string>
+    <string name="llamar_calculadora">LLamar Calculadora</string>
+    <string name="llamar_settings">Settings</string>
 </resources>

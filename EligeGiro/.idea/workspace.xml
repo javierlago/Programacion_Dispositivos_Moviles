@@ -5,18 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="289de4b9-db8f-4fa4-a3e4-8d217be8bec0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Activities/Ejercicios/CicloDeVida/app/src/main/java/com/example/ciclodevida/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Activities/Ejercicios/CicloDeVida/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activities/Ejercicios/ACTIVIDADES - EJERCICIOS v1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Activities/Ejercicios/ACTIVIDADES_v1.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activities/Ejercicios/CambiandoMainActivity/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Activities/Ejercicios/CambiandoMainActivity/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activities/Ejercicios/CambiandoMainActivity/app/src/main/java/com/example/cambiandomainactivity/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Activities/Ejercicios/CambiandoMainActivity/app/src/main/java/com/example/cambiandomainactivity/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activities/Ejercicios/CambiandoMainActivity/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Activities/Ejercicios/CambiandoMainActivity/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activities/Ejercicios/CambiandoMainActivity/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Activities/Ejercicios/CambiandoMainActivity/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Activities/Ejercicios/CambiandoMainActivity/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../Activities/Ejercicios/CambiandoMainActivity/gradle.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio12/.idea/deploymentTargetDropDown.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio12/.idea/deploymentTargetDropDown.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio12/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio12/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ejercicio12/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ejercicio12/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eventos/Ejercicio7Saludo/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eventos/Ejercicio7Saludo/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eventos/Ejercicio7Saludo/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eventos/Ejercicio7Saludo/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eventos/Ejercicio7Saludo/app/src/main/java/com/reibax/ejercicio7saludo/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Eventos/Ejercicio7Saludo/app/src/main/java/com/reibax/ejercicio7saludo/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eventos/Ejercicio7Saludo/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eventos/Ejercicio7Saludo/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Eventos/Ejercicio7Saludo/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Eventos/Ejercicio7Saludo/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\a22javierla\.android\avd\Pixel_3_API_24.avd]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\a22javierla\.android\avd\3.4_WQVGA_API_23.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -68,15 +76,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/DPM/EligeGiro&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "E:/DPM/Ejercicio11"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="EligeGiro.app.main" />

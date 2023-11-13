@@ -13,29 +13,35 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/nombre"
-        android:inputType="textCapWords"/>
+        android:inputType="textCapWords"
+        android:minHeight="48dp" />
 
 
     <!-- android:inputType="textCapWords"
        se utiliza para que los nombres siempre empiezen por
        mayuscula
        -->
+
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:hint="@string/edad"
         android:inputType="number"
-        android:autofillHints="" />
+        android:minHeight="48dp" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="left">
         <RadioButton
+            android:id="@+id/btn_senora"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/senora"/>
         <RadioButton
+            android:id="@+id/btn_senor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/senor"/>
@@ -43,7 +49,7 @@
     </LinearLayout>
 
     <CheckBox
-        android:id="@+id/despedida"
+        android:id="@+id/chk_despedida"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
@@ -51,12 +57,12 @@
 
     <TextView
         android:id="@+id/editTextText"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="10"
         android:inputType="text"
-        android:text="Elige tu respuesta"
-        android:textAlignment="center" />
+        android:text="@string/elige_tu_respuesta"
+        android:textSize="25sp"
+        tools:ignore="TextViewEdits" />
 
 
 
@@ -67,14 +73,14 @@
         android:orientation="horizontal">
 
         <RadioButton
-            android:id="@+id/radioButton5"
+            android:id="@+id/rbt_adios"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Adios" />
 
         <RadioButton
-            android:id="@+id/radioButton6"
+            android:id="@+id/rbtn_hasta_pronto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -82,7 +88,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/button_saludar"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:text="Saludar" />

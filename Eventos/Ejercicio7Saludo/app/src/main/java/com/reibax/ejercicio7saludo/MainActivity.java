@@ -3,6 +3,7 @@ package com.reibax.ejercicio7saludo;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
@@ -12,7 +13,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
     // Obtener la fecha actual
     Date currentDate = new Date();
     int currentYear;
@@ -45,4 +46,15 @@ public class MainActivity extends AppCompatActivity {
         btnSr = findViewById(R.id.btn_senor);
         chkDeseaSaludo = findViewById(R.id.chk_despedida);
     }
+    public void listeners(){
+        btnSr.setOnClickListener(this);
+        btnSra.setOnClickListener(this);
+    }
+
+
+    @Override
+    public void onClick(View v) {
+
+    }
+}
 

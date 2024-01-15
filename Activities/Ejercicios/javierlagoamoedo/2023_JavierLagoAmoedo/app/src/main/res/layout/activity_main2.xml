@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/marco"
+    >
+    <LinearLayout
+        android:layout_margin="@dimen/marco"
+        android:background="@color/interior"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/imc"
+            android:textSize="@dimen/titulo"
+            android:textColor="@color/marco"/>
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/valores_medida"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/metros"/>
+        <EditText
+            android:inputType="numberDecimal"
+            android:id="@+id/valores_peso"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/kg"/>
+        <Button
+            android:id="@+id/btn_calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate_2"/>
+        <Button
+            android:id="@+id/btn_finalizar_app"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/end_app"/>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+</LinearLayout>

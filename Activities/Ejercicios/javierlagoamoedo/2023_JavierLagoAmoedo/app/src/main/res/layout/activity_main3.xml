@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/marco"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/marco"
+        android:background="@color/interior"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:textSize="@dimen/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IMC=" />
+
+            <TextView
+                android:id="@+id/float_resultado_final"
+                android:textSize="@dimen/titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aqui va a ir el resultado" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageFinal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+             />
+
+        <TextView
+            android:layout_margin="20dp"
+            android:textSize="@dimen/titulo"
+            android:id="@+id/string_estado_final"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="NORMAL" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

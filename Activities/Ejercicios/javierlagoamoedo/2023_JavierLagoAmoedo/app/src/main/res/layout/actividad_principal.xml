@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/marco"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+
+    >
+    <ImageButton
+        android:id="@+id/boton_imagen"
+        android:layout_margin="@dimen/marco"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/logo"
+        android:background="@color/foto"
+         />
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_margin="@dimen/marco"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+
+        <TextView
+            android:textColor="@color/marco"
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/imc"
+            android:textAlignment="center"
+            android:textSize="@dimen/titulo"/>
+
+
+        <RadioGroup
+            android:checkedButton="@+id/btn_calcular_imc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RadioButton
+                android:id="@+id/btn_calcular_imc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/calculate"/>
+
+            <RadioButton
+                android:id="@+id/more_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/moreinfo"
+                 />
+
+
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_calcular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALCULATE" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

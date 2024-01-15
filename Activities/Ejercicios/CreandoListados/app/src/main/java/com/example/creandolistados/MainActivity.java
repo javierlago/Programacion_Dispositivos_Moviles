@@ -36,7 +36,8 @@ public class MainActivity extends AppCompatActivity {
                 i.setClass(this, boton5_Activity.class);
                 break;
 
-        }//startActiviy
+        }
+        //startActiviy
         startActivity(i);
         
         

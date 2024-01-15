@@ -12,31 +12,33 @@
         android:gravity="center"
         android:orientation="vertical">
 
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Introduzca un planeta"
-            android:padding="10dp"/>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Aceptar" />
-
         <TextView
-            android:visibility="gone"
+
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Spinner Dinamico"
             android:textAlignment="center"
             android:textSize="30sp" />
+        <EditText
+            android:id="@+id/texto_anadir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Introduzca un planeta"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/botonAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aceptar" />
+
 
         <!-- Simulando un spiner dinamico-->
         <Spinner
-            android:visibility="gone"
             android:id="@+id/spiner5"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
 
 
     </LinearLayout>

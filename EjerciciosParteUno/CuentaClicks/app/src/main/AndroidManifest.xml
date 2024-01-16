@@ -12,9 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CuentaClicks"
         tools:targetApi="31">
+
+        <!--   android:screenOrientation="portrait" para que no se gire la app-->
         <activity
             android:name=".MainActivity"
-            android:exported="true">
+            android:exported="true"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

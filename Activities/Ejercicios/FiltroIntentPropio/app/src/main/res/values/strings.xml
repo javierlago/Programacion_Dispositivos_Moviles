@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FiltroIntentPropio</string>
+    <string name="cargar_web">Cargar Web Explicito</string>
+    <string name="url">URL</string>
+    <string name="web_implicito">Cargar Web Implicito</string>
+</resources>

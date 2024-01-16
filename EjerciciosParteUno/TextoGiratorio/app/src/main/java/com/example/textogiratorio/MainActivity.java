@@ -1,5 +1,6 @@
 package com.example.textogiratorio;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.content.ContextCompat;
@@ -27,9 +28,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         setContentView(R.layout.activity_main);
         mensaje = findViewById(R.id.mensaje);
         mensaje.setOnClickListener(this);
-
+//        if (savedInstanceState != null) {
+//            giro = savedInstanceState.getInt("giro");
+//        }
 
     }
+//    @Override
+//    public void onSaveInstanceState( @NonNull Bundle outState) {
+//        super.onSaveInstanceState(outState);
+//        outState.putInt("giro", giro);
+//    }
+
 
     @Override
     public void onClick(View view) {

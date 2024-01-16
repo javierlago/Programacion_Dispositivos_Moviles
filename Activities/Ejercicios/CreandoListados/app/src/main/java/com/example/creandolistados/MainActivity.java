@@ -35,6 +35,13 @@ public class MainActivity extends AppCompatActivity {
             case R.id.button5:
                 i.setClass(this, boton5_Activity.class);
                 break;
+            case R.id.button6:
+                i.setClass(this,Provincias_Activity.class);
+                break;
+                // probando las list view
+            case R.id.list_view:
+                i.setClass(this, ListView_1_Activity.class);
+                break;
 
         }
         //startActiviy

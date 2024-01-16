@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Probando filtros"
+        android:textAlignment="center"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/edit_text_url"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/url"
+        android:textSize="30sp"/>
+
+    <Button
+        android:id="@+id/btn_cargar_web"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cargar_web"
+        android:onClick="onClickBtn"/>
+
+    <Button
+        android:onClick="onClickBtn"
+        android:id="@+id/btn_cargar_web_implicito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/web_implicito" />
+
+
+</LinearLayout>

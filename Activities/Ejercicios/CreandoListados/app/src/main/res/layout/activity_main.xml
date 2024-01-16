@@ -10,26 +10,26 @@
         android:layout_height="wrap_content"
         android:text="Creandp listados"
         android:textAlignment="center" />
-
+<!-- Gestion de los spiners -->
     <Button
-        android:onClick="onClickBtnListados"
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickBtnListados"
         android:text="Sin Adaptador" />
 
     <Button
-        android:onClick="onClickBtnListados"
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickBtnListados"
         android:text="Adaptador" />
 
     <Button
-        android:onClick="onClickBtnListados"
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="onClickBtnListados"
         android:text="Adaptador con recurso" />
 
     <Button
@@ -45,6 +45,25 @@
         android:layout_height="wrap_content"
         android:onClick="onClickBtnListados"
         android:text="Adaptador con Dinamico" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickBtnListados"
+        android:text="Provincia/Ciudad" />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="10dp"
+    android:background="@color/black"/>
+
+    <!-- Gestion de los List view -->
+    <Button
+        android:id="@+id/list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickBtnListados"
+        android:text="List View" />
 
 
 </LinearLayout>

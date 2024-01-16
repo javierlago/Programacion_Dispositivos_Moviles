@@ -1,16 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-   <string-array name="planetas">
-       <item>Marte_R</item>
-       <item>Mercurio</item>
-       <item>Venus</item>
-       <item>Jupiter</item>
-       <item>Saturno</item>
-       <item>Urano</item>
-       <item>Neptuno</item>
-       <item>Tierra</item>
-   </string-array>
+    <string-array name="planetas">
+        <item>Marte_R</item>
+        <item>Mercurio</item>
+        <item>Venus</item>
+        <item>Jupiter</item>
+        <item>Saturno</item>
+        <item>Urano</item>
+        <item>Neptuno</item>
+        <item>Tierra</item>
+    </string-array>
+    <string-array name="Provincias">
+        <item>Pontevedra</item>
+        <item>Coruña</item>
+        <item>Lugo</item>
+        <item>Ourense</item>
+    </string-array>
+    <string-array name="CiudadesCorunha">
+        <item>Santigo</item>
+        <item>Coruña</item>
+        <item>Betanzos</item>
+        <item>Ferrolñ</item>
+    </string-array>
+    <string-array name="CiudadesLugo">
+        <item>Lugo</item>
+        <item>Ribadeo</item>
+    </string-array>
+    <string-array name="CiudadesOurense">
+        <item>Ourense</item>
+        <item>Xinzo</item>
+        <item>Ribadavia</item>
 
+    </string-array>
+    <string-array name="CiudadesPontevedra">
+        <item>Vigo</item>
+        <item>Redondela</item>
+        <item>Pontevedra</item>
+        <item>Moaña</item>
+    </string-array>
 
 
 </resources>

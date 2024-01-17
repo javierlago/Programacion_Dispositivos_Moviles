@@ -38,6 +38,26 @@
         <item>Pontevedra</item>
         <item>Moaña</item>
     </string-array>
-
+    <string-array name="nombres">
+        <item>Abel</item>
+        <item>Ana</item>
+        <item>Anacleto</item>
+        <item>Anastasio</item>
+        <item>Anastasia</item>
+        <item>Anibal</item>
+        <item>Antonio</item>
+        <item>Bernardo</item>
+        <item>Bernardino</item>
+        <item>Carlos</item>
+        <item>Carla</item>
+        <item>Carlota</item>
+        <item>Carlomagno</item>
+        <item>Celia</item>
+        <item>César</item>
+        <item>Cesáreo</item>
+        <item>Cesárea</item>
+        <item>Celeste</item>
+        <item>Celestina</item>
+    </string-array>
 
 </resources>

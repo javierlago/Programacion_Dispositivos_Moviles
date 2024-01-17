@@ -8,9 +8,11 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Creandp listados"
-        android:textAlignment="center" />
-<!-- Gestion de los spiners -->
+        android:text="Creandp listados Spinne"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+    <!-- Gestion de los spiners -->
     <Button
         android:id="@+id/button1"
         android:layout_width="match_parent"
@@ -52,18 +54,43 @@
         android:layout_height="wrap_content"
         android:onClick="onClickBtnListados"
         android:text="Provincia/Ciudad" />
-<View
-    android:layout_width="match_parent"
-    android:layout_height="10dp"
-    android:background="@color/black"/>
-
+    <!-- ____________________________________________________________________________________ -->
     <!-- Gestion de los List view -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Creandp listados List View"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"/>
+
     <Button
         android:id="@+id/list_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClickBtnListados"
         android:text="List View" />
+
+    <Button
+        android:id="@+id/list_View_Planetas2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickBtnListados"
+        android:text="List View Adapter" />
+    <Button
+        android:id="@+id/list_View_Planetas3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickBtnListados"
+        android:text="List View Adapter Dinamico" />
+
+    <Button
+        android:id="@+id/list_View_AutoCompletar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickBtnListados"
+        android:text="List View Autocompletar" />
 
 
 </LinearLayout>

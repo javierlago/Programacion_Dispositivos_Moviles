@@ -8,17 +8,19 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="List View Simple"
+        android:text="Auto Completado de texto"
         android:textAlignment="center"
         />
 
     <!-- Creando elemeto list view estático: carga datos mediante un adaptador explicito-->
 
 
-    <ListView
-        android:id="@+id/list_View_Planetas2"
+    <AutoCompleteTextView
+        android:id="@+id/list_View_AutoCompletar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:hint="Nombres"
         />
 
 

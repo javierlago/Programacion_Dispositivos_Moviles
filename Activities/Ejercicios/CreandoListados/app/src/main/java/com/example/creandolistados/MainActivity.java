@@ -1,11 +1,11 @@
 package com.example.creandolistados;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @SuppressLint("NonConstantResourceId")
     public void onClickBtnListados(View view) {
         Intent i = new Intent();
-        switch(view.getId()){
+        switch (view.getId()) {
             case R.id.button1:
                 i.setClass(this, boton1_Activity.class);
                 break;
@@ -36,18 +36,26 @@ public class MainActivity extends AppCompatActivity {
                 i.setClass(this, boton5_Activity.class);
                 break;
             case R.id.button6:
-                i.setClass(this,Provincias_Activity.class);
+                i.setClass(this, Provincias_Activity.class);
                 break;
-                // probando las list view
+            // probando las list view
             case R.id.list_view:
                 i.setClass(this, ListView_1_Activity.class);
+                break;
+            case R.id.list_View_Planetas2:
+                i.setClass(this, ListView2_Activity.class);
+                break;
+            case R.id.list_View_Planetas3:
+                i.setClass(this, ListView3_Activity.class);
+                break;
+            case R.id.list_View_AutoCompletar:
+                i.setClass(this, ListView4_Autocompletar_Activity.class);
                 break;
 
         }
         //startActiviy
         startActivity(i);
-        
-        
+
 
     }
 }

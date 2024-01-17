@@ -13,6 +13,12 @@
         android:theme="@style/Theme.CreandoListados"
         tools:targetApi="31">
         <activity
+            android:name=".ListView4_Autocompletar_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".ListView3_Activity"
+            android:exported="false" />
+        <activity
             android:name=".ListView2_Activity"
             android:exported="false" />
         <activity

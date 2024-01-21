@@ -33,9 +33,9 @@ public class Provincias_Activity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 switch (position) {
                     case 0:
-                        spinnerCiudades.setAdapter(adaptadorCiudades);
                         ciudades.addAll(Arrays.asList(getResources().getStringArray(R.array.CiudadesPontevedra)));
                         adaptadorCiudades= new ArrayAdapter<String>(Provincias_Activity.this, android.R.layout.simple_spinner_dropdown_item, getResources().getStringArray(R.array.CiudadesPontevedra));
+                        spinnerCiudades.setAdapter(adaptadorCiudades);
                         break;
                     case 1:
                         adaptadorCiudades = new ArrayAdapter<String>(Provincias_Activity.this, android.R.layout.simple_spinner_dropdown_item, getResources().getStringArray(R.array.CiudadesCorunha));

@@ -13,6 +13,9 @@
         android:theme="@style/Theme.CreandoListados"
         tools:targetApi="31">
         <activity
+            android:name=".Activity_autocompletar_provincias"
+            android:exported="false" />
+        <activity
             android:name=".ListView4_Autocompletar_Activity"
             android:exported="false" />
         <activity

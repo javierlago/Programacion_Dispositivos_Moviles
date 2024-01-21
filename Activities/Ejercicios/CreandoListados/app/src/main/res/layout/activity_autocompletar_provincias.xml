@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Provincias"
+        android:textAlignment="center"
+        />
+
+    <!-- Creando elemeto list view estático: carga datos mediante un adaptador explicito-->
+
+
+    <AutoCompleteTextView
+        android:id="@+id/txt_view_atucompletar_prov"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:hint="Indique la provincia"
+        />
+    <Spinner
+        android:id="@+id/spn_auto_ciudades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+</LinearLayout>

@@ -16,6 +16,17 @@
         <item>Lugo</item>
         <item>Ourense</item>
     </string-array>
+    <string-array name="Provincias_segundo_ejercicio">
+        <item>Pontevedra</item>
+        <item>A Coruña</item>
+        <item>Lugo</item>
+        <item>Ourense</item>
+        <item>Leon</item>
+        <item>Lerida</item>
+        <item>Palencia</item>
+        <item>Alicante</item>
+        <item>Almeria</item>
+    </string-array>
     <string-array name="CiudadesCorunha">
         <item>Santigo</item>
         <item>Coruña</item>

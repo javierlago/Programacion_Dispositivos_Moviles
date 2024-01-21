@@ -51,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
             case R.id.list_View_AutoCompletar:
                 i.setClass(this, ListView4_Autocompletar_Activity.class);
                 break;
+            case R.id.btn_autocompletado_prov:
+                i.setClass(this,Activity_autocompletar_provincias.class);
 
         }
         //startActiviy

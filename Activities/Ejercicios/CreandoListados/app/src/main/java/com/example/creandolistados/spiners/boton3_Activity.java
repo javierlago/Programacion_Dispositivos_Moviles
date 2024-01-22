@@ -1,4 +1,4 @@
-package com.example.creandolistados;
+package com.example.creandolistados.spiners;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
+
+import com.example.creandolistados.R;
 
 public class boton3_Activity extends AppCompatActivity {
     private Spinner spPlanteas;

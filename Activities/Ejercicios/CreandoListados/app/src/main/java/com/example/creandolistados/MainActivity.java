@@ -7,6 +7,16 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.creandolistados.spiners.ListView2_Activity;
+import com.example.creandolistados.spiners.ListView3_Activity;
+import com.example.creandolistados.spiners.ListView4_Autocompletar_Activity;
+import com.example.creandolistados.spiners.ListView_1_Activity;
+import com.example.creandolistados.spiners.boton1_Activity;
+import com.example.creandolistados.spiners.boton2_Activity;
+import com.example.creandolistados.spiners.boton3_Activity;
+import com.example.creandolistados.spiners.boton4_Activity;
+import com.example.creandolistados.spiners.boton5_Activity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -53,6 +63,8 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.btn_autocompletado_prov:
                 i.setClass(this,Activity_autocompletar_provincias.class);
+            case R.id.btn_list_view_img:
+                i.setClass(this, lista_view_imagenes.class);
 
         }
         //startActiviy

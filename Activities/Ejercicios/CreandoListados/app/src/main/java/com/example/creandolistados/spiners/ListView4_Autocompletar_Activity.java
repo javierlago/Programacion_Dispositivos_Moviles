@@ -1,4 +1,4 @@
-package com.example.creandolistados;
+package com.example.creandolistados.spiners;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Toast;
+
+import com.example.creandolistados.R;
 
 public class ListView4_Autocompletar_Activity extends AppCompatActivity {
     AutoCompleteTextView autoCompleteTextView;

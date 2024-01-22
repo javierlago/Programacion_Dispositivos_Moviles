@@ -106,5 +106,12 @@
         android:onClick="onClickBtnListados"
         android:text="Autocompletado provincias"/>
 
+    <Button
+        android:id="@+id/btn_list_view_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickBtnListados"
+        android:text="List View Personalizada" />
+
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.creandolistados;
+package com.example.creandolistados.spiners;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
+
+import com.example.creandolistados.R;
 
 public class ListView_1_Activity extends AppCompatActivity {
     ListView listViewPlanetas1;

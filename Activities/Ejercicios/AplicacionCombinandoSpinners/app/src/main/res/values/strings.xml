@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">AplicacionCombinandoSpinners</string>
+    <string name="bienvenida">Selecciona el formato que deseas visualizar</string>
+</resources>

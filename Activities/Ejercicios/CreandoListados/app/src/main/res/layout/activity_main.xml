@@ -99,12 +99,13 @@
         android:layout_height="wrap_content"
         android:onClick="onClickBtnListados"
         android:text="Autocompletar Provincias" />
+
     <Button
         android:id="@+id/btn_autocompletado_prov"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="onClickBtnListados"
-        android:text="Autocompletado provincias"/>
+        android:text="Autocompletado provincias" />
 
     <Button
         android:id="@+id/btn_list_view_img"
@@ -112,6 +113,20 @@
         android:layout_height="wrap_content"
         android:onClick="onClickBtnListados"
         android:text="List View Personalizada" />
+
+    <Button
+        android:id="@+id/btn_list_view_img_varias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickBtnListados"
+        android:text="List View Personalizada Imagenes Varias" />
+
+    <Button
+        android:id="@+id/btn_list_view_img_varias_typed_array"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickBtnListados"
+        android:text="List View Personalizada Imagenes Varias" />
 
 
 </LinearLayout>

@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.creandolistados.spiners.ListView2_Activity;
 import com.example.creandolistados.spiners.ListView3_Activity;
 import com.example.creandolistados.spiners.ListView4_Autocompletar_Activity;
+import com.example.creandolistados.spiners.ListViewDiferentesImagenesTypedArray;
 import com.example.creandolistados.spiners.ListView_1_Activity;
 import com.example.creandolistados.spiners.boton1_Activity;
 import com.example.creandolistados.spiners.boton2_Activity;
@@ -65,6 +66,10 @@ public class MainActivity extends AppCompatActivity {
                 i.setClass(this,Activity_autocompletar_provincias.class);
             case R.id.btn_list_view_img:
                 i.setClass(this, lista_view_imagenes.class);
+            case R.id.btn_list_view_img_varias:
+                i.setClass(this, ListViewPersonalizadaImagnes2.class);
+            case R.id.btn_list_view_img_varias_typed_array:
+                i.setClass(this, ListViewDiferentesImagenesTypedArray.class);
 
         }
         //startActiviy

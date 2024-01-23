@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <array name="planetas_fotos">
+        <item>@drawable/marte</item>
+        <item>@drawable/mercurio</item>
+        <item>@drawable/venus</item>
+        <item>@drawable/jupiter</item>
+        <item>@drawable/saturno</item>
+        <item>@drawable/urano</item>
+        <item>@drawable/neptuno</item>
+        <item>@drawable/tierra</item>
+    </array>
     <string-array name="planetas">
         <item>Marte_R</item>
         <item>Mercurio</item>

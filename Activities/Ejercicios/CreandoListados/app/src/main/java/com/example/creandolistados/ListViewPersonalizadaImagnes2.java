@@ -25,7 +25,7 @@ public class ListViewPersonalizadaImagnes2 extends AppCompatActivity {
         };
 
         AdaptadorPersonalizadoUno adaptadorPersonalizadoUno = new AdaptadorPersonalizadoUno(this,
-                R.layout.activity_list_view_personalizada_imagnes2,getResources().getStringArray(R.array.planetas)
+                R.layout.fila_img_variadas,getResources().getStringArray(R.array.planetas)
                 ,arrayIdFotosPlanetas);
         // asignar adaptador a vista
         listView.setAdapter(adaptadorPersonalizadoUno);

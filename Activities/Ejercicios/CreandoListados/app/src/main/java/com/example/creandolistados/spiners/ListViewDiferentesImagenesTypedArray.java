@@ -28,7 +28,7 @@ public class ListViewDiferentesImagenesTypedArray extends AppCompatActivity {
 
 
         AdaptadorPersonalizadoDos adaptadorPersonalizadoUno = new AdaptadorPersonalizadoDos(this,
-                R.layout.activity_list_view_diferentes_imagenes_typed_array,getResources().getStringArray(R.array.planetas)
+                R.layout.fila_img_variadas,getResources().getStringArray(R.array.planetas)
                 ,getResources().obtainTypedArray(R.array.planetas_fotos));
         // asignar adaptador a vista
         listView.setAdapter(adaptadorPersonalizadoUno);

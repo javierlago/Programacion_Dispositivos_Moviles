@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    @SuppressLint("NonConstantResourceId")
+
     public void onClickBtnListados(View view) {
         Intent i = new Intent();
         switch (view.getId()) {

@@ -6,21 +6,39 @@
 
     >
     <!-- La imagen ahora se carga en ejecucion -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
     <ImageView
         android:id="@+id/img_cambiante_planeta"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_margin="5dp"
+        android:layout_gravity="center"
         />
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
     <TextView
         android:id="@+id/text_view_planeta_img_variadas"
         android:layout_width="match_parent"
         android:layout_height="30dp"
         android:layout_margin="5dp"
         android:textSize="20sp"
-        android:textAlignment="center"/>
 
+        android:text="nombre del planeta"/>
 
+    <TextView
+        android:id="@+id/text_view_planeta_img_variadas_mas_info"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:text="Informacion del planeta"
+        />
+    </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>

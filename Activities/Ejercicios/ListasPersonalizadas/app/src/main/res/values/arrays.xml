@@ -20,4 +20,30 @@
         <item>Neptuno</item>
         <item>Tierra</item>
     </string-array>
+    <string name="puntos">
+        <item>@drawable/color_azul</item>
+        <item>@drawable/color_rosa</item>
+        <item>@drawable/color_verde</item>
+    </string>
+    <string name="animales">
+        <item>@drawable/aguila</item>
+        <item>@drawable/ballena</item>
+        <item>@drawable/caballo</item>
+        <item>@drawable/canario</item>
+        <item>@drawable/gato</item>
+        <item>@drawable/perro</item>
+        <item>@drawable/vaca</item>
+        <item>@drawable/delfin</item>
+    </string>
+    <string-array name="animales_nombre">
+        <item>Aguila</item>
+        <item>Ballena</item>
+        <item>Caballo</item>
+        <item>Canario</item>
+        <item>Gato</item>
+        <item>Perro</item>
+        <item>Vaca</item>
+        <item>Delfin</item>
+    </string-array>
+
 </resources>

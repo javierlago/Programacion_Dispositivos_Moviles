@@ -39,11 +39,13 @@ public class AdaptadorPersonalizadoVariasImagenes extends ArrayAdapter {
 
         // Identificamos los componentes de layout personalizado
         TextView txtViewPlanetas = fila.findViewById(R.id.text_view_planeta_img_variadas);
+        TextView txtViewMasInfoPlanetas = fila.findViewById(R.id.text_view_planeta_img_variadas_mas_info);
         ImageView imagenViewPlaneta = fila.findViewById(R.id.img_cambiante_planeta);
 
         // Asignamos valor a los componentes identificados anteriormente
         txtViewPlanetas.setText(arrayPlanetas[position]);
         imagenViewPlaneta.setImageDrawable(idFotos.getDrawable(position));
+        txtViewMasInfoPlanetas.setText(context.getResources().getString(R.string.info)+ arrayPlanetas[position]);
 
         // Devolvemos la vista personalizada
         return fila;

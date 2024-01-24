@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ListasPersonalizadas"
         tools:targetApi="31">
         <activity
+            android:name=".ListViewConImagenesDeAnimales"
+            android:exported="false" />
+        <activity
             android:name=".ListViewConVariasImagenes"
             android:exported="false" />
         <activity

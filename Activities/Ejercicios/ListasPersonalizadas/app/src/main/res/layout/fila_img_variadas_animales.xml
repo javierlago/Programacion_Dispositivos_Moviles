@@ -27,12 +27,14 @@
             android:orientation="vertical">
 
             <TextView
+                android:textStyle="bold"
                 android:id="@+id/text_view_nombre_animal"
                 android:layout_width="match_parent"
                 android:layout_height="30dp"
                 android:layout_margin="5dp"
                 android:textSize="20sp"
-                android:text="nombre del planeta" />
+                android:text="nombre"
+                android:textAlignment="center"/>
 
             <TextView
                 android:id="@+id/text_view_decripcion_animal"
@@ -40,7 +42,7 @@
                 android:layout_height="30dp"
                 android:layout_margin="5dp"
                 android:textSize="20sp"
-                android:text="Informacion del planeta" />
+                android:text="Descripcion" />
         </LinearLayout>
 
         <ImageView

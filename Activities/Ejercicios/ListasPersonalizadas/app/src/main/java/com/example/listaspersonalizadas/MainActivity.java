@@ -24,6 +24,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.ir_a_list_view_varias_img:
                 intent.setClass(this,ListViewConVariasImagenes.class);
                 break;
+            case R.id.ir_a_list_view_varias_img_animales:
+                intent.setClass(this, ListViewConImagenesDeAnimales.class);
+                break;
         }
         startActivity(intent);
     }

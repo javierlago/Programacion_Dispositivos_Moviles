@@ -19,4 +19,11 @@
         android:text="Ir a ListView varias img"
         android:onClick="listenerButton"
         />
+
+    <Button
+        android:id="@+id/ir_a_list_view_varias_img_animales"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="listenerButton"
+        android:text="Ir a ListView varias img" />
 </LinearLayout>

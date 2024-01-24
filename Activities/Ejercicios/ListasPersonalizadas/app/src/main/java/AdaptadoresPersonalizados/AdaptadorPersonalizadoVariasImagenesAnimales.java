@@ -35,7 +35,7 @@ public class AdaptadorPersonalizadoVariasImagenesAnimales extends ArrayAdapter {
         this.arrayDescripcionAnimales = arrayDescripcionAnimales;
     }
 
-    @SuppressLint("UseCompatLoadingForDrawables")
+
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -43,12 +43,6 @@ public class AdaptadorPersonalizadoVariasImagenesAnimales extends ArrayAdapter {
         // inflamos nuestro layout personalizado
         LayoutInflater layoutInflater = context.getLayoutInflater();
         View fila = layoutInflater.inflate(identificadorLayout, null);
-        if (position % 2 == 0) {
-            fila.setBackgroundColor(context.getColor(R.color.azul));
-
-        } else {
-            fila.setBackgroundColor(context.getColor(R.color.azul_claro));
-        }
 
         // Identificamos los componentes de layout personalizado
         TextView txtViewNombreAnimal = fila.findViewById(R.id.text_view_nombre_animal);
@@ -60,21 +54,32 @@ public class AdaptadorPersonalizadoVariasImagenesAnimales extends ArrayAdapter {
         txtViewNombreAnimal.setText(arrayNombresAnimales[position]);
         imagenViewFotoAnimal.setImageDrawable(idFotosAnimales.getDrawable(position));
         txtViewDescripcionAnimal.setText(arrayDescripcionAnimales[position]);
+        if (position % 2 == 0) {
+            fila.setBackgroundColor(context.getColor(R.color.azul));
+        } else {
+            fila.setBackgroundColor(context.getColor(R.color.azul_claro));
+            txtViewNombreAnimal.setTextColor(context.getColor(R.color.color_nombre_dos));
+        }
 
-        switch (arrayNombresAnimales[position]) {
+        switch (arrayNombresAnimales[position].toString()) {
             case "Aguila":
             case "Canario": {
                 imagenPunto.setImageDrawable(context.getDrawable(R.drawable.color_verde));
             }
+            break;
             case "Ballena":
             case "Delfin": {
                 imagenPunto.setImageDrawable(context.getDrawable(R.drawable.color_azul));
 
             }
+            break;
             case "Gato":
+            case "Vaca":
             case "Caballo":
+            case "Perro": {
                 imagenPunto.setImageDrawable(context.getDrawable(R.drawable.color_rosa));
-
+            }
+            break;
         }
         // Devolvemos la vista personalizada
         return fila;

@@ -61,7 +61,7 @@ public class AdaptadorPersonalizadoVariasImagenesAnimales extends ArrayAdapter {
             txtViewNombreAnimal.setTextColor(context.getColor(R.color.color_nombre_dos));
         }
 
-        switch (arrayNombresAnimales[position].toString()) {
+        switch (arrayNombresAnimales[position]) {
             case "Aguila":
             case "Canario": {
                 imagenPunto.setImageDrawable(context.getDrawable(R.drawable.color_verde));

@@ -26,4 +26,11 @@
         android:layout_height="wrap_content"
         android:onClick="listenerButton"
         android:text="Ir a ListView varias img" />
+
+    <Button
+        android:id="@+id/ir_a_list_view_usando_arraylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="listenerButton"
+        android:text="Ir a ListView ArrayList" />
 </LinearLayout>

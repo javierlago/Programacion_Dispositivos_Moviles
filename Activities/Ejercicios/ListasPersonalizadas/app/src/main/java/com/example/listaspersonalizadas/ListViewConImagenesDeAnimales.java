@@ -30,9 +30,10 @@ public class ListViewConImagenesDeAnimales extends AppCompatActivity {
     listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-            String[] nombreAnimal= getResources().getStringArray(R.array.animales_nombre);
-            String[] descripcion= getResources().getStringArray(R.array.animales_descripcion);
-            Toast.makeText(ListViewConImagenesDeAnimales.this, nombreAnimal[position]+"\n"+descripcion[position], Toast.LENGTH_SHORT).show();
+          /*  String[] nombreAnimal= getResources().getStringArray(R.array.animales_nombre);
+            String[] descripcion= getResources().getStringArray(R.array.animales_descripcion);*/
+            Toast.makeText(ListViewConImagenesDeAnimales.this, parent.getResources().getStringArray(R.array.animales_nombre)[position]+
+                    "\n"+parent.getResources().getStringArray(R.array.animales_descripcion)[position], Toast.LENGTH_SHORT).show();
         }
     });
     }

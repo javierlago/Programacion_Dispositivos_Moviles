@@ -19,6 +19,15 @@
         <item>Urano</item>
         <item>Neptuno</item>
         <item>Tierra</item>
+    </string-array> <string-array name="planetas_descripcion">
+        <item>Marte_R Descripcion</item>
+        <item>Mercurio Des</item>
+        <item>Venus Des</item>
+        <item>Jupiter Des</item>
+        <item>Saturno Des</item>
+        <item>Urano Des</item>
+        <item>Neptuno Des</item>
+        <item>Tierra Des</item>
     </string-array>
     <array name="puntos">
         <item>@drawable/color_azul</item>

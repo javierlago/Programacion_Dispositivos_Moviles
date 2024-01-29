@@ -7,11 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import java.util.ArrayList;
+
+import Array_planetas.Planeta;
+
 public class MainActivity extends AppCompatActivity {
     Button botonIraListViewConImagenes;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         botonIraListViewConImagenes = findViewById(R.id.ir_a_list_view_varias_img);
@@ -26,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.ir_a_list_view_varias_img_animales:
                 intent.setClass(this, ListViewConImagenesDeAnimales.class);
+                break;
+            case R.id.ir_a_list_view_usando_arraylist:
+                intent.setClass(this,ListViewUsandoArrayList.class);
                 break;
         }
         startActivity(intent);

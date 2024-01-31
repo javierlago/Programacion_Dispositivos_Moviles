@@ -6,11 +6,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import Array_planetas.Planeta;
 
@@ -18,39 +21,39 @@ public class AdaptadorOptimizado extends ArrayAdapter {
     Activity context;
     ArrayList<Planeta> listadoPlanetas;
 
-    int identificadorLayout;
+    int identificadorLayout, identificadorTextoUno,identidicadorTextoDos,identificadorImagen;
 
 
-    public AdaptadorOptimizado(@NonNull Activity context, int identificadorLayout, int textViewResourceId, ArrayList<Planeta> listadoPlanetas) {
-        super(context, identificadorLayout, textViewResourceId);
+    public AdaptadorOptimizado(@NonNull Activity context,  int identificadorLayout, ArrayList<Planeta> listadoPlanetas,int identificadorTextoUno,int identidicadorTextoDos,int identificadorImagen) {
+        super(context,identificadorLayout,listadoPlanetas);
         this.listadoPlanetas=listadoPlanetas;
         this.context=context;
         this.identificadorLayout=identificadorLayout;
+        this.identificadorTextoUno=identificadorTextoUno;
+        this.identidicadorTextoDos = identidicadorTextoDos;
+        this.identificadorImagen=identificadorImagen;
 
     }
 
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        View item = convertView;
+        View fila = convertView;
 
-        if(item == null)
+        if(fila == null)
         {
             LayoutInflater inflater = context.getLayoutInflater();
-            item = inflater.inflate(identificadorLayout, null);
+            fila = inflater.inflate(identificadorLayout, null);
         }
-
-
-
-
-
-
-
-        return(item);
-
-
-
-
-
+        // Identificamos los componentes de layout personalizado
+        TextView txtViewPlanetas = fila.findViewById(identificadorTextoUno);
+        TextView txtViewMasInfoPlanetas = fila.findViewById(identidicadorTextoDos);
+        ImageView imagenViewPlaneta = fila.findViewById(identificadorImagen);
+        // Seteamos las variables que acabamos de crear
+        // Asignaciond de los recursos a los elementos creados en la view personalizada
+        txtViewPlanetas.setText(listadoPlanetas.get(position).getNombre());
+        txtViewMasInfoPlanetas.setText(listadoPlanetas.get(position).getDescripcion());
+        imagenViewPlaneta.setImageDrawable(context.getDrawable(listadoPlanetas.get(position).getImagen()));
+        return fila;
     }
 }

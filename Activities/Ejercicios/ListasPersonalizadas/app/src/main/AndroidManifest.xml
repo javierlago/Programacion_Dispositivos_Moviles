@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ListasPersonalizadas"
         tools:targetApi="31">
         <activity
+            android:name=".ListViewOptimizada"
+            android:exported="false" />
+        <activity
             android:name=".ListViewUsandoArrayList"
             android:exported="false" />
         <activity

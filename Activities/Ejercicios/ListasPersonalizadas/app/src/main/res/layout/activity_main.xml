@@ -33,4 +33,11 @@
         android:layout_height="wrap_content"
         android:onClick="listenerButton"
         android:text="Ir a ListView ArrayList" />
+
+    <Button
+        android:id="@+id/ir_a_list_view_optimizada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="listenerButton"
+        android:text="Ir a ListView Optimizada" />
 </LinearLayout>

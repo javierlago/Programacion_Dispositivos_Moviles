@@ -23,6 +23,9 @@ public class ListViewOptimizada extends AppCompatActivity {
 
     ListView listView;
 
+    AdaptadorOptimizado adaptadorOptimizado ;
+    Planeta planeta;
+    int position;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -33,7 +36,7 @@ public class ListViewOptimizada extends AppCompatActivity {
                     getResources().getStringArray(R.array.planetas_descripcion)[i],
                     getResources().obtainTypedArray(R.array.planetas_fotos).getResourceId(i, -1)));
         }
-        AdaptadorOptimizado adaptadorOptimizado = new AdaptadorOptimizado(this, R.layout.fila_img_variadas, listadoPlanetas,
+        adaptadorOptimizado = new AdaptadorOptimizado(this, R.layout.fila_img_variadas, listadoPlanetas,
                 R.id.text_view_planeta_img_variadas, R.id.text_view_planeta_img_variadas_mas_info, R.id.img_cambiante_planeta);
         listView.setAdapter(adaptadorOptimizado);
         registerForContextMenu(listView);
@@ -44,7 +47,10 @@ public class ListViewOptimizada extends AppCompatActivity {
     public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
         super.onCreateContextMenu(menu, v, menuInfo);
         MenuInflater inflater = getMenuInflater();
-        menu.setHeaderTitle(listadoPlanetas.get(((AdapterView.AdapterContextMenuInfo) menuInfo).position).getNombre());
+        //menu.setHeaderTitle(listadoPlanetas.get(((AdapterView.AdapterContextMenuInfo) menuInfo).position).getNombre());
+        planeta = (Planeta) listView.getAdapter().getItem(((AdapterView.AdapterContextMenuInfo) menuInfo).position);
+        position = ((AdapterView.AdapterContextMenuInfo) menuInfo).position;
+        menu.setHeaderTitle(planeta.getNombre());
         inflater.inflate(R.menu.menu_contextual, menu);
     }
 
@@ -53,7 +59,12 @@ public class ListViewOptimizada extends AppCompatActivity {
     public boolean onContextItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case R.id.opc_item_1_contextual:
-                Toast.makeText(this, "Has elegido el contextual 1", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Borrado de elemento", Toast.LENGTH_SHORT).show();
+                // Dos opciones de borrado
+                //adaptadorOptimizado.remove(planeta);
+                // borrado desde el Array List
+                listadoPlanetas.remove(planeta);
+                adaptadorOptimizado.notifyDataSetChanged();
                 return true;
             case R.id.opc_item_2_contextual:
                 Toast.makeText(this, "Has elegido el contextual 2", Toast.LENGTH_SHORT).show();

@@ -4,7 +4,7 @@
     <item
         android:id="@+id/opc_item_1_contextual"
         android:icon="@android:drawable/btn_plus"
-        android:title="Context 1" />
+        android:title="Eliminar elemento" />
     <item
         android:id="@+id/opc_item_2_contextual"
         android:icon="@android:drawable/arrow_up_float"

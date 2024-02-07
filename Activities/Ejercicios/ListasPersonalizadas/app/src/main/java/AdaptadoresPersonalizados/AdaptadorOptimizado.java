@@ -1,5 +1,6 @@
 package AdaptadoresPersonalizados;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -17,13 +18,13 @@ import java.util.List;
 
 import Array_planetas.Planeta;
 
-public class AdaptadorOptimizado extends ArrayAdapter {
+public class AdaptadorOptimizado extends ArrayAdapter<Planeta> {
     Activity context;
     ArrayList<Planeta> listadoPlanetas;
 
+
     int identificadorLayout, identificadorTextoUno,identidicadorTextoDos,identificadorImagen;
-
-
+    
     public AdaptadorOptimizado(@NonNull Activity context,  int identificadorLayout, ArrayList<Planeta> listadoPlanetas,int identificadorTextoUno,int identidicadorTextoDos,int identificadorImagen) {
         super(context,identificadorLayout,listadoPlanetas);
         this.listadoPlanetas=listadoPlanetas;
@@ -35,6 +36,7 @@ public class AdaptadorOptimizado extends ArrayAdapter {
 
     }
 
+    @SuppressLint("UseCompatLoadingForDrawables")
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="colores">
+        <item name="verde">verde</item>
+        <item name="rojo">rojo</item>
+        <item name="amarillo">amarillo</item>
+        <item name="azul">azul</item>
+
+
+
+    </string-array>
+
+
+
+</resources>

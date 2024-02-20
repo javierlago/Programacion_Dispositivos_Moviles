@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <Button
+        android:id="@+id/dialogo_con_mensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnsVentanas"
+        android:text="Dialogo con mensaje" />
+
+    <Button
+        android:id="@+id/ventana2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnsVentanas"
+        android:text="Boton con el OK" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnsVentanas"
+        android:text="Boton con lista de seleccion" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnsVentanas"
+        android:text="Boton con lista de seleccion con boton Acept" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnsVentanas"
+        android:text="Seleccion con boton Acept OK " />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnsVentanas"
+        android:text="Seleccion Multiple con boton Acept OK " />
+
+</LinearLayout>

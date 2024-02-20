@@ -3,7 +3,10 @@ package com.example.notificaciones;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
@@ -84,11 +87,27 @@ public class MainActivity extends AppCompatActivity {
         ventana.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(MainActivity.this, "Has pulsado cancel", Toast.LENGTH_SHORT).show();
+                //Toast.makeText(MainActivity.this, "Has pulsado cancel", Toast.LENGTH_SHORT).show();
+                // Toast personalizada desde un layout creado previamente
+                toastPersonalizada();
+
                 dialog.cancel();
             }
         });
         ventana.show();
+    }
+
+    private void toastPersonalizada() {
+        LinearLayout linearLayoutToast = findViewById(R.id.ll_toast);
+        LayoutInflater inflater = getLayoutInflater();
+        View view = inflater.inflate(R.layout.toast_personalizada,linearLayoutToast);
+        TextView textView = view.findViewById(R.id.txt_mensaje_toast);
+        textView.setText("Has pulsado cancelar");
+        // Primero hemos inflado el layout y depues generamos la toast
+        Toast toast = new Toast(this);
+        toast.setDuration(Toast.LENGTH_LONG);
+        toast.setView(view);
+        toast.show();
     }
 
     private void dialogoConLista() {

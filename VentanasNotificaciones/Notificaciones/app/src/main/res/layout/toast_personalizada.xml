@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:background="#000908"
+    android:background="#2AB7DF"
     android:padding="5dp" >
     <ImageView
         android:id="@+id/img_toast"
@@ -18,7 +18,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
-        android:textColor="#ffffff"
+        android:textColor="#121111"
         android:textStyle="bold|italic"
         android:textSize="20sp"
         android:padding="15dp" />

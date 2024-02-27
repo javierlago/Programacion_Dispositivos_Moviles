@@ -89,20 +89,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(DialogInterface dialog, int which) {
                 //Toast.makeText(MainActivity.this, "Has pulsado cancel", Toast.LENGTH_SHORT).show();
                 // Toast personalizada desde un layout creado previamente
-                toastPersonalizada();
-
+                toastPersonalizada("Has pulsado cancelar");
                 dialog.cancel();
             }
         });
         ventana.show();
     }
 
-    private void toastPersonalizada() {
+    private void toastPersonalizada(String mensaje) {
         LinearLayout linearLayoutToast = findViewById(R.id.ll_toast);
         LayoutInflater inflater = getLayoutInflater();
         View view = inflater.inflate(R.layout.toast_personalizada,linearLayoutToast);
         TextView textView = view.findViewById(R.id.txt_mensaje_toast);
-        textView.setText("Has pulsado cancelar");
+        textView.setText(mensaje);
         // Primero hemos inflado el layout y depues generamos la toast
         Toast toast = new Toast(this);
         toast.setDuration(Toast.LENGTH_LONG);

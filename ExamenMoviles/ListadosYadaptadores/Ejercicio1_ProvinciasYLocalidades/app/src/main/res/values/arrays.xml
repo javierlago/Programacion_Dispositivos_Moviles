@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="provincias">
+        <item>A Coruña</item>
+        <item>Lugo</item>
+        <item>Pontevedra</item>
+        <item>Ourense</item>
+
+
+    </string-array>
+    <string-array name="localidades_ACorunha">
+        <item>Betanzos</item>
+        <item>Ares</item>
+        <item>Muros</item>
+        <item>Santiago</item>
+    </string-array>
+    <string-array name="localidades_lugo">
+        <item>Lugo</item>
+        <item>Chantada</item>
+        <item>Foz</item>
+        <item>Viveiro</item>
+    </string-array>
+    <string-array name="localidades_pontevedra">
+        <item>Vigo</item>
+        <item>Redondela</item>
+        <item>Porriño</item>
+        <item>Cangas</item>
+    </string-array>
+    <string-array name="localidades_ourense">
+        <item>Rivadabia</item>
+        <item>Leiro</item>
+        <item>Xinzo</item>
+        <item>A Cañiza</item>
+    </string-array>
+</resources>

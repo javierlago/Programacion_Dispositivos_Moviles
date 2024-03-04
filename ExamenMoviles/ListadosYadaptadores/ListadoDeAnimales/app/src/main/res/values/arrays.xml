@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="planetas">
+        <item>Marte_R</item>
+        <item>Mercurio</item>
+        <item>Venus</item>
+        <item>Jupiter</item>
+        <item>Saturno</item>
+        <item>Urano</item>
+        <item>Neptuno</item>
+        <item>Tierra</item>
+    </string-array> <string-array name="planetas_descripcion">
+        <item>Marte_R Descripcion</item>
+        <item>Mercurio Des</item>
+        <item>Venus Des</item>
+        <item>Jupiter Des</item>
+        <item>Saturno Des</item>
+        <item>Urano Des</item>
+        <item>Neptuno Des</item>
+        <item>Tierra Des</item>
+    </string-array>
+    <array name="puntos">
+        <item>@drawable/color_azul</item>
+        <item>@drawable/color_rosa</item>
+        <item>@drawable/color_verde</item>
+    </array>
+    <array name="animales">
+        <item>@drawable/aguila</item>
+        <item>@drawable/ballena</item>
+        <item>@drawable/caballo</item>
+        <item>@drawable/canario</item>
+        <item>@drawable/gato</item>
+        <item>@drawable/perro</item>
+        <item>@drawable/vaca</item>
+        <item>@drawable/delfin</item>
+    </array>
+    <string-array name="animales_nombre">
+        <item>Aguila</item>
+        <item>Ballena</item>
+        <item>Caballo</item>
+        <item>Canario</item>
+        <item>Gato</item>
+        <item>Perro</item>
+        <item>Vaca</item>
+        <item>Delfin</item>
+    </string-array>
+    <string-array name="animales_descripcion">
+        <item>Ave rapaz</item>
+        <item>Mamifero marino</item>
+        <item>Porte Elegante</item>
+        <item>Canto Espectacular</item>
+        <item>Animal Domestico</item>
+        <item>Animal Domestico</item>
+        <item>Mamifero terrestre</item>
+        <item>Mamifero marino</item>
+    </string-array>
+
+</resources>

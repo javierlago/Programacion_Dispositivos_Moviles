@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Ejercicio_Dos</string>
+    <string name="texto_opciones">Opciones de texto cambiante</string>
+    <string name="azul">Azul</string>
+    <string name="rojo">Rojo</string>
+    <string name="verde">Verde</string>
+    <string name="amarillo">Amarillo</string>
+    <string name="texto_que_cambia">Texto cambiante de color</string>
+    <string name="guardar_color">Guardar</string>
+    <string name="guardar_reset">Resetear</string>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="planetas_fotos">
+        <item>@drawable/marte</item>
+        <item>@drawable/mercurio</item>
+        <item>@drawable/venus</item>
+        <item>@drawable/jupiter</item>
+        <item>@drawable/saturno</item>
+        <item>@drawable/urano</item>
+        <item>@drawable/neptuno</item>
+        <item>@drawable/tierra</item>
+    </array>
+    <string-array name="planetas">
+        <item>Marte_R</item>
+        <item>Mercurio</item>
+        <item>Venus</item>
+        <item>Jupiter</item>
+        <item>Saturno</item>
+        <item>Urano</item>
+        <item>Neptuno</item>
+        <item>Tierra</item>
+    </string-array>
+    <string-array name="Provincias">
+        <item>Pontevedra</item>
+        <item>Coruña</item>
+        <item>Lugo</item>
+        <item>Ourense</item>
+    </string-array>
+    <string-array name="Provincias_segundo_ejercicio">
+        <item>Pontevedra</item>
+        <item>A Coruña</item>
+        <item>Lugo</item>
+        <item>Ourense</item>
+        <item>Leon</item>
+        <item>Lerida</item>
+        <item>Palencia</item>
+        <item>Alicante</item>
+        <item>Almeria</item>
+    </string-array>
+    <string-array name="CiudadesCorunha">
+        <item>Santigo</item>
+        <item>Coruña</item>
+        <item>Betanzos</item>
+        <item>Ferrolñ</item>
+    </string-array>
+    <string-array name="CiudadesLugo">
+        <item>Lugo</item>
+        <item>Ribadeo</item>
+    </string-array>
+    <string-array name="CiudadesOurense">
+        <item>Ourense</item>
+        <item>Xinzo</item>
+        <item>Ribadavia</item>
+
+    </string-array>
+    <string-array name="CiudadesPontevedra">
+        <item>Vigo</item>
+        <item>Redondela</item>
+        <item>Pontevedra</item>
+        <item>Moaña</item>
+    </string-array>
+    <string-array name="nombres">
+        <item>Abel</item>
+        <item>Ana</item>
+        <item>Anacleto</item>
+        <item>Anastasio</item>
+        <item>Anastasia</item>
+        <item>Anibal</item>
+        <item>Antonio</item>
+        <item>Bernardo</item>
+        <item>Bernardino</item>
+        <item>Carlos</item>
+        <item>Carla</item>
+        <item>Carlota</item>
+        <item>Carlomagno</item>
+        <item>Celia</item>
+        <item>César</item>
+        <item>Cesáreo</item>
+        <item>Cesárea</item>
+        <item>Celeste</item>
+        <item>Celestina</item>
+    </string-array>
+
+</resources>

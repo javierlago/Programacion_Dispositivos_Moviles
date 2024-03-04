@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuBorrado"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_menu_borrado"
+        android:textAlignment="center"
+        android:textSize="@dimen/tamanio_titulos"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/edit_text_codigo_borrar_usuario"
+        android:layout_gravity="center"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_codigo_text_codigo"
+        android:inputType="number"
+        android:layout_margin="15dp"
+        />
+    <Button
+        android:id="@+id/boton_borrar_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_boton_borrar"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/boton_fin_borrar_alumno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/texto_boton_fin"
+        android:layout_gravity="center"/>
+
+
+</LinearLayout>

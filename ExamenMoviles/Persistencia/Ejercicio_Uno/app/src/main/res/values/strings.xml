@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ejercicio_Uno</string>
+    <string name="insertar_datos">Guardar</string>
+    <string name="mostrar_datos">Mostrar Datos</string>
+</resources>

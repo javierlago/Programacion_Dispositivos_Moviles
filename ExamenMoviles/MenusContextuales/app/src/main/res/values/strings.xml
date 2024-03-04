@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">MenusContextuales_01</string>
+    <string name="opcion_a">Opcion A</string>
+    <string name="opcion_b">Opcion B</string>
+    <string name="opcion_a_imagen">Opcion Imagen A</string>
+    <string name="opcion_b_imagen">Opcion Imagen B</string>
+</resources>

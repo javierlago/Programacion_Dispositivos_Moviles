@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/fondo">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alumnos"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="left"
+        android:layout_margin="10dp">
+    <Spinner
+        android:id="@+id/spiner_cursos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:entries="@array/cursos"
+        />
+
+        <Spinner
+            android:id="@+id/spiner_ciclos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:entries="@array/cliclos"
+            android:visibility="gone"/>
+    </LinearLayout>
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+
+        >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_alumno"/>
+    <EditText
+        android:id="@+id/txt_edit_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre y apellidos"
+        android:inputType="textCapWords"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/boton_guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/guardar"
+        android:onClick="onClick"/>
+    <ListView
+        android:textAlignment="center"
+        android:id="@+id/list_view_alumnos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+
+
+
+
+
+</LinearLayout>

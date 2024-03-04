@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Base de datos alumnos"
+        android:textAlignment="center"
+        android:layout_margin="10dp"/>
+    <EditText
+
+        android:layout_margin="10dp"
+        android:id="@+id/nombre_del_alumno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Introducir Nombre"
+        android:inputType="text"/>
+    <EditText
+        android:id="@+id/edit_text_codigo"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Codigo"
+        android:inputType="number"/>
+    <Button
+        android:id="@+id/boton_guardar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Guardar"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/boton_borrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Borrar"
+        android:layout_gravity="center"/>
+    <ListView
+        android:id="@+id/list_view_del_alumnado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EjercicioListViewPlanetas</string>
+    <string name="ver_planeta">Ver Planetas</string>
+    <string name="txt_ver_Planetas">PLANETAS</string>
+</resources>

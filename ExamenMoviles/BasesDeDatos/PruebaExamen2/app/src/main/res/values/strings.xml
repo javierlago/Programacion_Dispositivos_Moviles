@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">PruebaExamen2</string>
+    <string name="titulo_base_de_datos">BASE DE DATOS</string>
+    <string name="menu_insetar">Menu Insertar</string>
+    <string name="menu_consular_todos">VER TODOS</string>
+    <string name="menu_borrar">BORRAR</string>
+    <string name="txt_menu_borrado">MENU BORRADO</string>
+    <string name="hint_edit_text_nombre">Introducir nombre</string>
+    <string name="hint_codigo_text_codigo">Codigo</string>
+    <string name="texto_boton_borrar">BORRAR</string>
+    <string name="texto_boton_fin">FIN</string>
+    <string name="txt_menu_guardado">MENU GUARDADO</string>
+    <string name="texto_boton_guardar">GUARDAR</string>
+    <string name="hint_edit_text_apellidos">Introducir apellidos</string>
+</resources>

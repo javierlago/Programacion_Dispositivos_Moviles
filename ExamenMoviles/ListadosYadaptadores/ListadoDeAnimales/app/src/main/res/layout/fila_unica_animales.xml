@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!-- La imagen ahora se carga en ejecución -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:orientation="horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/img_foto_animal"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:layout_gravity="center"
+            android:src="@drawable/aguila" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/text_view_nombre_animal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:text="nombre"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:id="@+id/text_view_decripcion_animal"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_margin="5dp"
+                android:textSize="20sp"
+                android:text="Descripcion" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/img_punto"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_margin="5dp"
+            android:src="@drawable/color_azul"
+            android:layout_gravity="bottom"/>
+
+    </LinearLayout>
+
+</LinearLayout>
